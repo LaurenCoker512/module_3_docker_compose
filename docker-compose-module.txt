@@ -29,3 +29,9 @@ hello-container_1  | For more examples and ideas, visit:
 hello-container_1  |  https://docs.docker.com/get-started/
 hello-container_1  |
 module_3_docker_compose_hello-container_1 exited with code 0
+
+Removing module_3_docker_compose_hello-container_1
+Recreating 2b02042d6716_module_3_docker_compose_hello-container_1 ... done
+Attaching to module_3_docker_compose_hello-container_1
+hello-container_1  | Hello, Docker Compose!
+module_3_docker_compose_hello-container_1 exited with code 0
