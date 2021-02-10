@@ -3,12 +3,12 @@ services:
   hello-container:
     image: 'gentux/alpine-bash:laurencoker512'
     volumes: 
-      - "./scripts:/home/scripts"
+      - "scriptsdir:/home/scripts"
     command: sh /home/scripts/welcome-compose.sh
   data-container:
     image: 'gentux/alpine-data:laurencoker512'
     volumes:
-      - "./scripts:/home/scripts"
+      - "scriptsdir:/home/scripts"
 
 volumes:
   scriptsdir:
