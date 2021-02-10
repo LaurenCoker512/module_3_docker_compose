@@ -1,11 +1,14 @@
-version: '3'
+version: '3.7'
 services:
   hello-container:
     image: 'gentux/alpine-bash:laurencoker512'
     volumes: 
-      - ${WEB_APP_PATH}:${WEB_DESTINATION_PATH}
-    command: sh ./home/welcome-compose.sh
+      - "./scripts:/home/scripts"
+    command: sh /home/scripts/welcome-compose.sh
   data-container:
-    image: 'alpine:latest'
+    image: 'gentux/alpine-data:laurencoker512'
     volumes:
-      - ${WEB_APP_PATH}:${WEB_DESTINATION_PATH}
+      - "./scripts:/home/scripts"
+
+volumes:
+  scriptsdir:
