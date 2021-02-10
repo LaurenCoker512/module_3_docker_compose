@@ -35,3 +35,10 @@ Recreating 2b02042d6716_module_3_docker_compose_hello-container_1 ... done
 Attaching to module_3_docker_compose_hello-container_1
 hello-container_1  | Hello, Docker Compose!
 module_3_docker_compose_hello-container_1 exited with code 0
+
+Recreating module_3_docker_compose_hello-container_1 ... done
+Creating module_3_docker_compose_data-container_1    ... done
+Attaching to module_3_docker_compose_data-container_1, module_3_docker_compose_hello-container_1
+hello-container_1  | Hello, Docker Compose!
+module_3_docker_compose_data-container_1 exited with code 0
+module_3_docker_compose_hello-container_1 exited with code 0
