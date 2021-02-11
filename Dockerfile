@@ -1,3 +1,2 @@
-FROM alpine:latest
-RUN mkdir home/scripts
+FROM nginx:1-alpine
 COPY ./scripts /home/scripts

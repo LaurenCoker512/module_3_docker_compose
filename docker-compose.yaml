@@ -1,12 +1,14 @@
-version: '3.7'
+version: '3'
 services:
   hello-container:
-    image: 'gentux/alpine-bash:laurencoker512'
+    image: 'nginx:1-alpine'
+    depends_on:
+      - data-container
     volumes: 
       - "scriptsdir:/home/scripts"
-    command: sh /home/scripts/welcome-compose.sh
   data-container:
-    image: 'gentux/alpine-data:laurencoker512'
+    build:
+      context: .
     volumes:
       - "scriptsdir:/home/scripts"
 
